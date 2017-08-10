@@ -1,0 +1,44 @@
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff; }
+
+h3 {
+  text-transform: uppercase;
+  color: #fff; }
+
+#menu {
+  height: 100px;
+  border: none;
+  opacity: 0.5; }
+  #menu #menu_header a {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  #menu ul {
+    height: 100px; }
+    #menu ul a {
+      height: 30px;
+      padding: 35px 25px;
+      font-size: 22px; }
+
+#header {
+  background-image: url("../img/gif_zastepczy_home.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  padding: 30vh 0;
+  text-align: center; }
+  #header #header_row_1 {
+    height: 100%; }
+    #header #header_row_1 #header_logo {
+      background-image: url("../img/logo_big.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      height: 150px;
+      width: 150px; }

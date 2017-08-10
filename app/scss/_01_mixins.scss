@@ -1,1 +1,14 @@
 @import "00_zmienne";
+
+@mixin background_image ($url,$position,$size) {
+    background-image: $url;
+    background-position: $position;
+    background-size: $size;
+    background-repeat: no-repeat;
+}
+
+@mixin element_center {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
