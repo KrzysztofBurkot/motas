@@ -7,6 +7,16 @@ h3 {
   text-transform: uppercase;
   color: #fff; }
 
+h2 {
+  text-transform: uppercase; }
+
+.header_wrapper {
+  width: 100%;
+  text-align: center; }
+
+section {
+  padding-bottom: 4vw; }
+
 #menu {
   height: 100px;
   border: none;
@@ -42,3 +52,45 @@ h3 {
       margin: 0 auto;
       height: 150px;
       width: 150px; }
+
+#about {
+  height: 60vh; }
+  #about #about_items_row_wrapper {
+    height: 11vh;
+    color: #fff; }
+    #about #about_items_row_wrapper .about_items {
+      background-image: url("../img/4_popr.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 11vh;
+      border-bottom: 8px solid #fafad1;
+      text-align: center;
+      padding: 10px; }
+      #about #about_items_row_wrapper .about_items i {
+        font-size: 20px; }
+    #about #about_items_row_wrapper #about_items_2 {
+      border-left: 8px solid #fafad1;
+      border-right: 8px solid #fafad1; }
+
+#team {
+  height: 60vh; }
+  #team .team_fotos_wrapper_outer {
+    text-align: center; }
+  #team .team_foto_wrapper {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 25%; }
+  #team #team_foto_1 {
+    background-image: url("../img/piotrek.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  #team #team_foto_2 {
+    background-image: url("../img/pawel.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }

@@ -1,3 +1,31 @@
 @import "00_zmienne";
 
 @import "01_mixins";
+
+#team {
+    
+    height: $section_height;
+    
+    .team_fotos_wrapper_outer {
+        text-align: center;
+    }
+    
+    .team_foto_wrapper {
+        @include element_center;
+        height: 150px;
+        width: 150px;
+        border-radius: 25%;
+    }
+    
+    #team_foto_1 {
+        @include background_image (url("../img/piotrek.png"),
+            center,
+            cover);
+    }
+    
+    #team_foto_2 {
+        @include background_image (url("../img/pawel.jpg"),
+            center,
+            cover);
+    }
+}

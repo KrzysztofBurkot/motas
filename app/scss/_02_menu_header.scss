@@ -11,7 +11,19 @@ h3 {
     text-transform: uppercase;
     color: #fff;
 }  
-   
+
+h2 {
+    text-transform: uppercase;
+}
+
+.header_wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+section {
+    padding-bottom: 4vw;
+}
 #menu {
     height: 100px;
     border: none;
@@ -22,7 +34,7 @@ h3 {
             padding-bottom: 15px;
         }
     } 
-    ul {
+    ul { 
         height: 100px;
         a {
             height: 30px;
@@ -31,7 +43,7 @@ h3 {
         }
     }
 }
-
+ 
 #header {
     @include background_image (url("../img/gif_zastepczy_home.gif"),
     center,
