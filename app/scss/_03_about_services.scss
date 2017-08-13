@@ -1,28 +1,23 @@
 @import "00_zmienne";
 @import "01_mixins";
+
+
 #about {
-    height: $section_height;
-    #about_items_row_wrapper {
-        height: 11vh;
-        color: #fff;
-        
-        .about_items {
-            @include background_image (url("../img/4_popr.jpg"),
-            center,
-            cover);
-            height: 11vh;
-            border-bottom: $about_brick_border_width solid $about_brick_border_color;
-            text-align: center;
-            padding: 10px;
-            
-            i{
-                font-size: 20px;
-            }
+    
+    .about_items {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .about_items_icons_wrapper {
+            height: 150px;
+            width: 150px;
+            border-radius: 25%;
+            color: $sm_icons_color;
+            background-color: $sm_icons_wrapper_hover;
+            @include element_center;
+            padding: 25px 0;
+            font-size: 70px !important;
         }
-        
-        #about_items_2 {
-            border-left: $about_brick_border_width solid $about_brick_border_color;
-            border-right: $about_brick_border_width solid $about_brick_border_color;
-        }
-    } 
 }  
+ 
