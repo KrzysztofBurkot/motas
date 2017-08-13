@@ -1,3 +1,11 @@
 @import "00_zmienne";
 
 @import "01_mixins";
+
+#contact {
+    
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {font-weight: 700;}
+    input::-moz-placeholder, textarea::-moz-placeholder {font-weight: 700;}
+    input::-ms-input-placeholder, textarea::-ms-input-placeholder {font-weight: 700;}
+    input:-moz-placeholder, textarea:-moz-placeholder {font-weight: 700;}
+}
