@@ -4,17 +4,11 @@
 h1 {
     text-transform: uppercase;
     font-weight: bold;
-    color: #fff;
 }
 
-h3 {
+h2, h3 {
     text-transform: uppercase;
-    color: #fff;
 }  
-
-h2 {
-    text-transform: uppercase;
-}
 
 .header_wrapper {
     width: 100%;
@@ -45,28 +39,29 @@ h2 {
             }
         }
     }
-    
 }
  
 #header {
-    @include background_image (url("../img/gif_zastepczy_home.gif"),
-    center,
-    cover);
+    @include background_image (url("../img/gif_zastepczy_home.gif"), center, cover);
     background-attachment: fixed;
     height: 100vh;
-    padding: 30vh 0;
+    padding: 0;
     text-align: center;
     
-    #header_row_1 {
-        height: 100%;
+    #header_container_mask {
+        height: 100vh;
+        padding: 30vh 0;
+        background-color: rgba(255,255,255,.5);
         
-        #header_logo {
-            @include background_image (url("../img/logo_big.png"),
-            center,
-            cover);
-            @include element_center;
-            height: 150px;
-            width: 150px;
+        #header_row_1 {
+            height: 100%;
+
+            #header_logo {
+                @include background_image (url("../img/logo_big.png"), center, cover);
+                @include element_center;
+                height: 150px;
+                width: 150px;
+            }
         }
     }
 } 
