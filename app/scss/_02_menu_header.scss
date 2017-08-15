@@ -22,23 +22,30 @@ h2 {
 }
 
 #menu {
-    height: 100px;
-    border: none;
-    opacity: 0.5;
+    background-color: rgba(255,255,255,.8);
     #menu_header {
-        a {
-            padding-top: 15px;
-            padding-bottom: 15px;
+        .navbar-brand {
+            height: 100px;
         }
-    } 
-    ul { 
-        height: 100px;
-        a {
-            height: 30px;
-            padding: 35px 25px;
-            font-size: $font_size_menu;  
+        
+        .navbar-toggle {
+            padding: 10px;
+            margin: 35px 15px 35px 0px;
         }
     }
+    
+    .navbar-collapse {
+        max-height: 600px !important;
+        
+        .nav {
+            a {
+                font-size: 20px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+        }
+    }
+    
 }
  
 #header {
