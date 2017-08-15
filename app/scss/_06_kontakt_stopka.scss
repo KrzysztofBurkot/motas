@@ -3,9 +3,92 @@
 @import "01_mixins";
 
 #contact {
+    padding-bottom: $section_padding_bottom;
+    @include background_image (url("../img/seethrough_guy_scale.png"), left, contain);
     
-    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {font-weight: 700;}
-    input::-moz-placeholder, textarea::-moz-placeholder {font-weight: 700;}
-    input::-ms-input-placeholder, textarea::-ms-input-placeholder {font-weight: 700;}
-    input:-moz-placeholder, textarea:-moz-placeholder {font-weight: 700;}
+    #contact_right {
+        text-align: center;
+        
+        #contact_wrapper {
+            width: 100%;
+        }
+        
+        form {
+            width: 100%;
+            padding: 10px;
+            
+            .inputs {
+                @include input_basic_styling;
+                height: 50px;
+            }
+            
+            textarea {
+                @include input_basic_styling;
+                height: 150px;
+            }
+            
+            @include placeholder_styling (500, uppercase, darkgrey);
+            
+            button {
+                background-color: forestgreen;
+                padding: 15px 20px;
+                margin: 20px;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+                border-radius: 5%;
+                border: 0px solid;
+            }
+        } 
+    }
+}     
+
+#footer {
+    background-color: lightgray;
+    
+    .copyright {
+        text-align: center;
+        line-height: 100%; 
+        p {
+            margin: 0;
+            padding-top: 17px;
+            padding-bottom: 17px;
+            font-size: 16px;
+        }
+    }
+    
+    .footer_center { 
+        text-align: center;
+        
+        i {color: $sm_icons_color;}
+
+        .social_media_icons_container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 0px;
+        }
+
+        .social_media_icons_wrapper {
+            height: 35px;
+            width: 35px;
+            background-color: $sm_icons_wrapper_color;
+            border-radius: 25%;
+            margin: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .social_media_icons {
+            margin: auto;
+            font-size: 20px;
+        }
+
+        .social_media_icons_wrapper:hover {
+            background-color: $sm_icons_wrapper_hover;
+            border-radius: 50%;
+            transition: all 0.2s ease-in-out;
+        }
+    }
 }

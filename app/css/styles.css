@@ -1,3 +1,10 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; }
+
 h1 {
   text-transform: uppercase;
   font-weight: bold;
@@ -13,9 +20,6 @@ h2 {
 .header_wrapper {
   width: 100%;
   text-align: center; }
-
-section {
-  padding-bottom: 4vw; }
 
 #menu {
   height: 100px;
@@ -53,24 +57,25 @@ section {
       height: 150px;
       width: 150px; }
 
-#about .about_items {
-  text-align: center;
-  padding: 10px; }
-
-#about .about_items_icons_wrapper {
-  height: 150px;
-  width: 150px;
-  border-radius: 25%;
-  color: #fff;
-  background-color: #5bc0de;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  padding: 25px 0;
-  font-size: 70px !important; }
+#about {
+  padding-bottom: 10vh; }
+  #about .about_items {
+    text-align: center;
+    padding: 10px; }
+  #about .about_items_icons_wrapper {
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+    color: #fff;
+    background-color: #5bc0de;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 25px 0;
+    font-size: 70px !important; }
 
 #team {
-  height: 60vh; }
+  padding-bottom: 10vh; }
   #team .team_fotos_wrapper_outer {
     text-align: center; }
     #team .team_fotos_wrapper_outer i {
@@ -115,6 +120,7 @@ section {
     background-repeat: no-repeat; }
 
 #portfolio {
+  padding-bottom: 10vh;
   text-align: center; }
   #portfolio .portfolio_item_image_wrapper {
     height: 400px; }
@@ -160,14 +166,101 @@ section {
       background-size: cover;
       background-repeat: no-repeat; }
 
-#contact input::-webkit-input-placeholder, #contact textarea::-webkit-input-placeholder {
-  font-weight: 700; }
+#contact {
+  padding-bottom: 10vh;
+  background-image: url("../img/seethrough_guy_scale.png");
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  #contact #contact_right {
+    text-align: center; }
+    #contact #contact_right #contact_wrapper {
+      width: 100%; }
+    #contact #contact_right form {
+      width: 100%;
+      padding: 10px; }
+      #contact #contact_right form .inputs {
+        width: 85%;
+        padding: 10px;
+        margin: 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        border: 1px solid darkgrey;
+        height: 50px; }
+      #contact #contact_right form textarea {
+        width: 85%;
+        padding: 10px;
+        margin: 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        border: 1px solid darkgrey;
+        height: 150px; }
+      #contact #contact_right form input::-webkit-input-placeholder, #contact #contact_right form textarea::-webkit-input-placeholder {
+        font-weight: 500;
+        text-transform: uppercase;
+        color: darkgrey; }
+      #contact #contact_right form input::-moz-placeholder, #contact #contact_right form textarea::-moz-placeholder {
+        font-weight: 500;
+        text-transform: uppercase;
+        color: darkgrey; }
+      #contact #contact_right form input::-ms-input-placeholder, #contact #contact_right form textarea::-ms-input-placeholder {
+        font-weight: 500;
+        text-transform: uppercase;
+        color: darkgrey; }
+      #contact #contact_right form input:-moz-placeholder, #contact #contact_right form textarea:-moz-placeholder {
+        font-weight: 500;
+        text-transform: uppercase;
+        color: darkgrey; }
+      #contact #contact_right form button {
+        background-color: forestgreen;
+        padding: 15px 20px;
+        margin: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 5%;
+        border: 0px solid; }
 
-#contact input::-moz-placeholder, #contact textarea::-moz-placeholder {
-  font-weight: 700; }
+#footer {
+  background-color: lightgray; }
+  #footer .copyright {
+    text-align: center;
+    line-height: 100%; }
+    #footer .copyright p {
+      margin: 0;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      font-size: 16px; }
+  #footer .footer_center {
+    text-align: center; }
+    #footer .footer_center i {
+      color: #fff; }
+    #footer .footer_center .social_media_icons_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 0px; }
+    #footer .footer_center .social_media_icons_wrapper {
+      height: 35px;
+      width: 35px;
+      background-color: #333;
+      border-radius: 25%;
+      margin: 8px;
+      display: flex;
+      flex-direction: column; }
+    #footer .footer_center .social_media_icons {
+      margin: auto;
+      font-size: 20px; }
+    #footer .footer_center .social_media_icons_wrapper:hover {
+      background-color: #5bc0de;
+      border-radius: 50%;
+      transition: all 0.2s ease-in-out; }
 
-#contact input::-ms-input-placeholder, #contact textarea::-ms-input-placeholder {
-  font-weight: 700; }
-
-#contact input:-moz-placeholder, #contact textarea:-moz-placeholder {
-  font-weight: 700; }
+@media (min-width: 992px) {
+  #menu #wrapp
+#menu_wrapper_outer {
+    height: 100px !important; }
+    #menu #wrapp
+#menu_wrapper_outer #menu_wrapper_outer:nth-child(2) {
+      height: 100px !important; } }

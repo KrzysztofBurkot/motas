@@ -1,0 +1,18 @@
+@import "00_zmienne";
+@import "01_mixins";
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    #menu {
+        #wrapp
+        #menu_wrapper_outer {
+            height: 100px !important;
+            #menu_wrapper_outer:nth-child(2){
+                height: 100px !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {}

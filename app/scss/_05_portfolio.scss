@@ -3,6 +3,7 @@
 @import "01_mixins";
 
 #portfolio {
+    padding-bottom: $section_padding_bottom;
     text-align: center;
     
     .portfolio_item_image_wrapper {

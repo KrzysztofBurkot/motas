@@ -12,3 +12,20 @@
     right: 0;
     margin: 0 auto;
 }
+
+
+@mixin placeholder_styling ($font_weight, $font_style, $font_color) {
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {font-weight: $font_weight; text-transform: $font_style; color: $font_color;}
+    input::-moz-placeholder, textarea::-moz-placeholder {font-weight: $font_weight; text-transform: $font_style; color: $font_color;}
+    input::-ms-input-placeholder, textarea::-ms-input-placeholder {font-weight: $font_weight; text-transform: $font_style; color: $font_color;}
+    input:-moz-placeholder, textarea:-moz-placeholder {font-weight: $font_weight; text-transform: $font_style; color: $font_color;}
+}
+
+@mixin input_basic_styling {
+    width: 85%;
+    padding: 10px;
+    margin: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid darkgrey;
+}

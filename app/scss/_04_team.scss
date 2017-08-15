@@ -3,8 +3,8 @@
 @import "01_mixins";
 
 #team {
-    
-    height: $section_height;
+      
+    padding-bottom: $section_padding_bottom;
     
     .team_fotos_wrapper_outer {
         text-align: center;
@@ -17,8 +17,8 @@
             justify-content: center;
             width: 100%;
             margin: 0px;
-        }
-
+        } 
+ 
         .social_media_icons_wrapper {
             height: 35px;
             width: 35px;
@@ -33,7 +33,7 @@
             margin: auto;
             font-size: 20px;
         }
-
+ 
         .social_media_icons_wrapper:hover {
             background-color: $sm_icons_wrapper_hover;
             border-radius: 50%;
