@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body data-spy="scroll">
     <!--menu nawigacyjne-->
-    <nav id="menu" class="navbar navbar-default navbar-fixed-top data-target">
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top data-target navbar_show">
         <div class="container" id="menu_wrapper_outer">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div id="menu_header" class="navbar-header">
@@ -29,7 +29,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a id="menu_logo" class="navbar-brand" href="#"><img src="img/logo_menu.png" alt="Motas_logo"></a>
+                <a id="menu_logo" class="navbar-brand" href="#header"><img src="img/logo_menu.png" alt="Motas_logo"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -39,7 +39,7 @@
                     <li><a href="#team" class="menu_list_items">Zespół</a></li>
                     <li><a href="#portfolio" class="menu_list_items">Dokonania</a></li>
                     <li><a href="#contact" class="menu_list_items">Napisz do nas</a></li>
-                    <li><a href="#contact" class="menu_list_items">Kontakt</a></li>
+                    <li><a href="#data" class="menu_list_items">Kontakt</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -234,30 +234,40 @@
                     </div>
                     <div class="row">
                         <form method="POST" action="http://formspree.io/burypl@gmail.com" class="col-sm-12">
-                            <input class="inputs" type="text" name="name_surname" placeholder="*Imię i Nazwisko"><br/>
-                            <input class="inputs" type="email" name="email" placeholder="*Email"><br/>
-                            <textarea name="message" cols="30" rows="10" placeholder="*Wiadomość"></textarea><br/>
+                            <input class="inputs" type="text" name="name_surname" placeholder="*Imię i Nazwisko" required><br/>
+                            <input class="inputs" type="email" name="email" placeholder="*Email" required><br/>
+                            <textarea name="message" placeholder="*Wiadomość" maxlength="1000" required></textarea><br/>
                             <button type="submit">Wyślij</button>
                         </form>
-                    </div>
+                    </div>                    
+                </div>
+            </div>
+        </article>
+    </section>
+    
+    <!--   DATA   -->
+    <section id="data" class="container-fluid">
+        <article class="row">
+            <div class="col-lg-12">
+                <div class="container">
                     <div class="row">
-                        <div class="col-lg-12 header_wrapper" id="contact_info_header_wrapper">
-                            <h2 class="contact_info_header">dane kontaktowe</h2>
+                        <div class="col-lg-12 header_wrapper" id="data_header_wrapper">
+                            <h2 class="data_header">dane kontaktowe</h2>
                         </div>
                     </div>
-                    <div class="row" id="contact_info_content_wrapper">
+                    <div class="row" id="data_content_wrapper">
                         <div class="col-sm-6">
-                            <h4 id="contact_info_invoice_header">dane do faktury</h4>
+                            <h4 class="data_subheader" id="data_invoice_header">dane do faktury</h4>
                         </div>
                         <div class="col-sm-6">
-                            <h4 id="contact_info_data_header">dane kontaktowe</h4>
+                            <h4 class="data_subheader" id="contact_info_data_header">dane kontaktowe</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
     </section>
-
+    
     <!--   FOOTER   -->
     <footer id="footer" class="container-fluid">
         <div class="row">

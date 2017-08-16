@@ -1,0 +1,51 @@
+@import "00_zmienne";
+
+@import "01_mixins";
+
+#contact {
+    padding-bottom: $section_padding_bottom - 5vh;
+    @include background_image (url("../img/seethrough_guy_scale.png"), left, contain);
+    
+    #contact_right {
+        text-align: center;
+        
+        #contact_wrapper {
+            width: 100%;
+        }
+        
+        form {
+            width: 100%;
+            padding: 10px;
+            
+            .inputs {
+                @include input_basic_styling;
+                height: 50px;
+            }
+            
+            textarea {
+                @include input_basic_styling;
+                height: 150px;
+            }
+            
+            input:focus, textarea:focus {
+                background-color: $form_bg_color_focus;
+                border: 2px solid gold;
+                outline: none;
+            }
+            
+            @include placeholder_styling (500, uppercase, darkgrey);
+            
+            button {
+                background-color: forestgreen;
+                padding: 15px 20px;
+                margin: 20px;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+                border-radius: 5%;
+                border: 0px solid;
+            }
+        } 
+    }
+}     
+

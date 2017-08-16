@@ -1,47 +1,17 @@
 @import "00_zmienne";
-
 @import "01_mixins";
 
-#contact {
+#data {
     padding-bottom: $section_padding_bottom;
-    @include background_image (url("../img/seethrough_guy_scale.png"), left, contain);
     
-    #contact_right {
+    #data_content_wrapper {
         text-align: center;
         
-        #contact_wrapper {
-            width: 100%;
+        .data_subheader {
+            text-transform: uppercase;
         }
-        
-        form {
-            width: 100%;
-            padding: 10px;
-            
-            .inputs {
-                @include input_basic_styling;
-                height: 50px;
-            }
-            
-            textarea {
-                @include input_basic_styling;
-                height: 150px;
-            }
-            
-            @include placeholder_styling (500, uppercase, darkgrey);
-            
-            button {
-                background-color: forestgreen;
-                padding: 15px 20px;
-                margin: 20px;
-                color: #fff;
-                text-transform: uppercase;
-                font-weight: bold;
-                border-radius: 5%;
-                border: 0px solid;
-            }
-        } 
-    }
-}     
+    } 
+}
 
 #footer {
     background-color: lightgray;

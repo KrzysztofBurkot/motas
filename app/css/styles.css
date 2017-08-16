@@ -5,6 +5,16 @@ body {
   padding: 0px;
   overflow-x: hidden; }
 
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
 h1 {
   text-transform: uppercase;
   font-weight: bold; }
@@ -16,8 +26,29 @@ h2, h3 {
   width: 100%;
   text-align: center; }
 
+.navbar_hide {
+  top: -100px !important; }
+
+.navbar_show {
+  top: 0 !important; }
+
+.navbar_below_color {
+  background-color: whitesmoke !important; }
+
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
 #menu {
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 100px;
+  transition: top 0.4s ease-in-out; }
   #menu #menu_header .navbar-brand {
     height: 100px; }
   #menu #menu_header .navbar-toggle {
@@ -56,6 +87,16 @@ h2, h3 {
         height: 150px;
         width: 150px; }
 
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
 #about {
   padding-bottom: 10vh; }
   #about .about_items {
@@ -73,6 +114,16 @@ h2, h3 {
     padding: 25px 0;
     font-size: 70px !important; }
 
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
 #team {
   padding-bottom: 10vh; }
   #team .team_fotos_wrapper_outer {
@@ -118,6 +169,16 @@ h2, h3 {
     background-size: cover;
     background-repeat: no-repeat; }
 
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
 #portfolio {
   padding-bottom: 10vh;
   text-align: center; }
@@ -165,8 +226,18 @@ h2, h3 {
       background-size: cover;
       background-repeat: no-repeat; }
 
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
 #contact {
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
   background-image: url("../img/seethrough_guy_scale.png");
   background-position: left;
   background-size: contain;
@@ -184,6 +255,7 @@ h2, h3 {
         margin: 20px;
         font-size: 18px;
         border-radius: 10px;
+        background-color: #f2f2f2;
         border: 1px solid darkgrey;
         height: 50px; }
       #contact #contact_right form textarea {
@@ -192,8 +264,13 @@ h2, h3 {
         margin: 20px;
         font-size: 18px;
         border-radius: 10px;
+        background-color: #f2f2f2;
         border: 1px solid darkgrey;
         height: 150px; }
+      #contact #contact_right form input:focus, #contact #contact_right form textarea:focus {
+        background-color: #cccccc;
+        border: 2px solid gold;
+        outline: none; }
       #contact #contact_right form input::-webkit-input-placeholder, #contact #contact_right form textarea::-webkit-input-placeholder {
         font-weight: 500;
         text-transform: uppercase;
@@ -219,6 +296,23 @@ h2, h3 {
         font-weight: bold;
         border-radius: 5%;
         border: 0px solid; }
+
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
+#data {
+  padding-bottom: 10vh; }
+  #data #data_content_wrapper {
+    text-align: center; }
+    #data #data_content_wrapper .data_subheader {
+      text-transform: uppercase; }
 
 #footer {
   background-color: lightgray; }
@@ -255,3 +349,22 @@ h2, h3 {
       background-color: #5bc0de;
       border-radius: 50%;
       transition: all 0.2s ease-in-out; }
+
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
+@media (max-width: 767px) {
+  #contact {
+    background-image: url("../img/world-map.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    #contact #contact_header_wrapper {
+      color: #fff; } }

@@ -3,17 +3,20 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
+@import "02_basic";
 
-@import "02_menu_header";
+@import "03_menu_header";
 
-@import "03_about_services";
+@import "04_about";
 
-@import "04_team";
+@import "05_team";
 
-@import "05_portfolio";
+@import "06_portfolio";
 
-@import "06_kontakt_stopka";  
+@import "07_contact";  
 
-@import "07_responsive";
+@import "08_data_footer";
+ 
+@import "09_responsive";

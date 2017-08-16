@@ -1,0 +1,28 @@
+@import "00_zmienne";
+@import "01_mixins";
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2, h3 {
+    text-transform: uppercase;
+}  
+
+.header_wrapper {
+    width: 100%;
+    text-align: center; 
+}
+
+.navbar_hide {
+    top: -$menu_height !important;
+}
+
+.navbar_show {
+    top: 0 !important;
+}
+
+.navbar_below_color {
+    background-color: $menu_down_color !important;
+}
