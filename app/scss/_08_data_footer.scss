@@ -10,13 +10,19 @@
         .data_subheader {
             text-transform: uppercase;
         }
+        
+        .data_wrapper_inner {
+            span {
+                font-weight: bold;
+            }
+        }
     } 
 }
 
 #footer {
     background-color: lightgray;
     
-    .copyright {
+    .copyright { 
         text-align: center;
         line-height: 100%; 
         p {

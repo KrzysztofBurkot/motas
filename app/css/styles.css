@@ -313,6 +313,12 @@ h2, h3 {
     text-align: center; }
     #data #data_content_wrapper .data_subheader {
       text-transform: uppercase; }
+    #data #data_content_wrapper .data_wrapper_inner span {
+      font-weight: bold; }
+    #data #data_content_wrapper #data_invoice_inner_wrapper {
+      margin: auto; }
+    #data #data_content_wrapper #data_info_inner_wrapper {
+      margin: auto; }
 
 #footer {
   background-color: lightgray; }
