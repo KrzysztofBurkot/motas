@@ -38,27 +38,13 @@ $(document).ready(function () {
         if (ifScrolled) {
             hasScrolled();
             ifScrolled = false;
-            if ($(document).scrollTop()>headerHight) {
-            $('nav').addClass('navbar_below_color');
-                console.log("ponizej");
-            } else {
-            $('nav').removeClass('navbar_below_color');
-                console.log("powyzej");
-            } 
-        }
+            }
     }, 250);
-});
-
-
-/*$(window).scroll(function () {
-    if ($(document).scrollTop() > 200) {
-        $('#menu').css('background-color', 'rgba(255,255,255,1)');
-        $('#menu_logo').css('color', '#777');
-        $('.menu_list_items').css('color', '#777');
+    
+    /*BG COLOR CHANGE*/
+    if ($(document).scrollTop()>headerHight) {
+        $('nav').addClass('navbar_below_color');
     } else {
-        console.log('pozycja mniej niż 200');
-        $('#menu').css('background-color', 'rgba(255,255,255,0)');
-        $('#menu_logo').css('color', '#fff');
-        $('.menu_list_items').css('color', '#fff');
-    };
-});*/
+        $('nav').removeClass('navbar_below_color');
+    }
+});

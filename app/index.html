@@ -233,11 +233,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <form method="POST" action="http://formspree.io/burypl@gmail.com" class="col-sm-12">
-                            <input class="inputs" type="text" name="name_surname" placeholder="*Imię i Nazwisko" required><br/>
-                            <input class="inputs" type="email" name="email" placeholder="*Email" required><br/>
-                            <textarea name="message" placeholder="*Wiadomość" maxlength="1000" required></textarea><br/>
-                            <button type="submit">Wyślij</button>
+                        <form method="POST" action="php/send_form_mail.php" class="col-sm-12" onsubmit="alert("ojrety")">
+                            <input id="inp_name" class="inputs" type="text" name="name_surname" placeholder="*Imię i Nazwisko"><br/>
+                            <input id="inp_mail" class="inputs" type="email" name="email" placeholder="*Email"><br/>
+                            <textarea id="inp_message" name="message" placeholder="*Wiadomość" maxlength="1000"></textarea><br/>
+                            <button id="submit_button" type="submit">Wyślij</button>
                         </form>
                     </div>                    
                 </div>
@@ -312,8 +312,9 @@
     <!--Bootstrap-->
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <!--Mój skrypt-->
-    <script src="js/main.js"></script>
+    <!--scripts-->
+    <script src="js/navbar_handle.js"></script>
+    <script src="js/form_handle.js"></script>
 </body>
 
 </html>

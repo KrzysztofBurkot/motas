@@ -35,6 +35,15 @@ h2, h3 {
 .navbar_below_color {
   background-color: whitesmoke !important; }
 
+.form_error_add {
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0; }
+
+.form_error_previous {
+  margin-bottom: 0px !important; }
+
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
@@ -315,10 +324,6 @@ h2, h3 {
       text-transform: uppercase; }
     #data #data_content_wrapper .data_wrapper_inner span {
       font-weight: bold; }
-    #data #data_content_wrapper #data_invoice_inner_wrapper {
-      margin: auto; }
-    #data #data_content_wrapper #data_info_inner_wrapper {
-      margin: auto; }
 
 #footer {
   background-color: lightgray; }

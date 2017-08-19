@@ -26,3 +26,14 @@ h2, h3 {
 .navbar_below_color {
     background-color: $menu_down_color !important;
 }
+
+.form_error_add {
+    color: red;
+    font-weight: bold;
+    font-size: $form_error_font_size;
+    margin: 0;
+}
+
+.form_error_previous {
+    margin-bottom: 0px !important;
+}
