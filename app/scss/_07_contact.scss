@@ -16,7 +16,7 @@
         form {
             width: 100%;
             padding: 10px;
-            
+             
             .inputs {
                 @include input_basic_styling;
                 height: 50px;
@@ -44,6 +44,21 @@
                 font-weight: bold;
                 border-radius: 5%;
                 border: 0px solid;
+            }
+            
+            .form_error_add {
+                color: red;
+                font-weight: bold;
+                font-size: $form_error_font_size;
+                margin: 0;
+            }
+
+            .form_error_previous {
+                margin-bottom: 0px !important;
+            }
+
+            .err_invisible {
+                display: none; 
             }
         } 
     }

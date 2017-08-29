@@ -35,15 +35,20 @@ h2, h3 {
 .navbar_below_color {
   background-color: whitesmoke !important; }
 
-.form_error_add {
-  color: red;
-  font-weight: bold;
-  font-size: 16px;
-  margin: 0; }
+/*.form_error_add {
+    color: red;
+    font-weight: bold;
+    font-size: $form_error_font_size;
+    margin: 0;
+}
 
 .form_error_previous {
-  margin-bottom: 0px !important; }
+    margin-bottom: 0px !important;
+}
 
+.err_invisible {
+    visibility: hidden;
+}*/
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
@@ -305,6 +310,15 @@ h2, h3 {
         font-weight: bold;
         border-radius: 5%;
         border: 0px solid; }
+      #contact #contact_right form .form_error_add {
+        color: red;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0; }
+      #contact #contact_right form .form_error_previous {
+        margin-bottom: 0px !important; }
+      #contact #contact_right form .err_invisible {
+        display: none; }
 
 /*FONT SIZES*/
 /*MENU VARIABLES*/
