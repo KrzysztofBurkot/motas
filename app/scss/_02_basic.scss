@@ -10,6 +10,10 @@ h2, h3 {
     text-transform: uppercase;
 }  
 
+p {
+    font-family: $normal_text_font;
+}
+
 .header_wrapper {
     width: 100%;
     text-align: center; 
@@ -27,7 +31,7 @@ h2, h3 {
     background-color: $menu_down_color !important;
 }
 
-/*.form_error_add {
+.form_error_add {
     color: red;
     font-weight: bold;
     font-size: $form_error_font_size;
@@ -39,5 +43,5 @@ h2, h3 {
 }
 
 .err_invisible {
-    visibility: hidden;
-}*/
+    visibility: hidden; 
+}

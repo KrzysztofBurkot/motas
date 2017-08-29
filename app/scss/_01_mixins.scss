@@ -13,6 +13,10 @@
     margin: 0 auto;
 }
 
+@mixin element_center_vertical {
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 @mixin placeholder_styling ($font_weight, $font_style, $font_color) {
     input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {font-weight: $font_weight; text-transform: $font_style; color: $font_color;}

@@ -5,11 +5,13 @@ body {
   padding: 0px;
   overflow-x: hidden; }
 
+/*FONTS*/
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
 /*SOCIAL MEDIA*/
 /*FORM*/
+/*FONTS*/
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
@@ -21,6 +23,9 @@ h1 {
 
 h2, h3 {
   text-transform: uppercase; }
+
+p {
+  font-family: "Jura", sans-serif; }
 
 .header_wrapper {
   width: 100%;
@@ -35,25 +40,25 @@ h2, h3 {
 .navbar_below_color {
   background-color: whitesmoke !important; }
 
-/*.form_error_add {
-    color: red;
-    font-weight: bold;
-    font-size: $form_error_font_size;
-    margin: 0;
-}
+.form_error_add {
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0; }
 
 .form_error_previous {
-    margin-bottom: 0px !important;
-}
+  margin-bottom: 0px !important; }
 
 .err_invisible {
-    visibility: hidden;
-}*/
+  visibility: hidden; }
+
+/*FONTS*/
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
 /*SOCIAL MEDIA*/
 /*FORM*/
+/*FONTS*/
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
@@ -101,17 +106,20 @@ h2, h3 {
         height: 150px;
         width: 150px; }
 
+/*FONTS*/
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
 /*SOCIAL MEDIA*/
 /*FORM*/
+/*FONTS*/
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
 /*SOCIAL MEDIA*/
 /*FORM*/
 #about {
+  padding-top: 10vh;
   padding-bottom: 10vh; }
   #about .team_fotos_wrapper_outer {
     text-align: center; }
@@ -156,11 +164,13 @@ h2, h3 {
     background-size: cover;
     background-repeat: no-repeat; }
 
+/*FONTS*/
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
 /*SOCIAL MEDIA*/
 /*FORM*/
+/*FONTS*/
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
@@ -213,11 +223,13 @@ h2, h3 {
       background-size: cover;
       background-repeat: no-repeat; }
 
+/*FONTS*/
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
 /*SOCIAL MEDIA*/
 /*FORM*/
+/*FONTS*/
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
@@ -293,11 +305,13 @@ h2, h3 {
       #contact #contact_right form .err_invisible {
         display: none; }
 
+/*FONTS*/
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
 /*SOCIAL MEDIA*/
 /*FORM*/
+/*FONTS*/
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
@@ -323,11 +337,13 @@ h2, h3 {
       padding-bottom: 17px;
       font-size: 16px; }
 
+/*FONTS*/
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
 /*SOCIAL MEDIA*/
 /*FORM*/
+/*FONTS*/
 /*FONT SIZES*/
 /*MENU VARIABLES*/
 /*SECTION SIZES*/
@@ -341,3 +357,81 @@ h2, h3 {
     background-repeat: no-repeat; }
     #contact #contact_header_wrapper {
       color: #fff; } }
+
+/*FONTS*/
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
+/*FONTS*/
+/*FONT SIZES*/
+/*MENU VARIABLES*/
+/*SECTION SIZES*/
+/*SOCIAL MEDIA*/
+/*FORM*/
+#gallery {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 10;
+  display: none; }
+  #gallery #gallery_main {
+    position: absolute;
+    width: 75vw;
+    height: 75vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 3px solid black;
+    border-radius: 10px;
+    z-index: 11;
+    background-image: url("../img/tomato.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    #gallery #gallery_main .gallery_main_mask {
+      position: relative;
+      height: 100%;
+      width: 100%; }
+      #gallery #gallery_main .gallery_main_mask .gallery_icons_wrapper {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 25px;
+        margin: 10px;
+        color: #fff;
+        z-index: 12; }
+        #gallery #gallery_main .gallery_main_mask .gallery_icons_wrapper i:hover {
+          color: red; }
+      #gallery #gallery_main .gallery_main_mask #img_previous {
+        left: 0; }
+      #gallery #gallery_main .gallery_main_mask #img_next {
+        right: 0; }
+      #gallery #gallery_main .gallery_main_mask #exit_gallery {
+        position: absolute;
+        font-size: 25px;
+        right: 0;
+        top: 0;
+        transform: translate(100%, -100%); }
+        #gallery #gallery_main .gallery_main_mask #exit_gallery i:hover {
+          font-size: 35px;
+          transition: all 0.2s ease-in-out; }
+  #gallery #gallery_text_wrapper {
+    position: absolute;
+    width: 75vw;
+    height: 12.5vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 100%;
+    transform: translateY(-100%);
+    border: 3px solid black;
+    border-radius: 10px;
+    z-index: 11;
+    padding: 5px;
+    text-align: left; }

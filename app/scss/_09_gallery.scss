@@ -1,0 +1,86 @@
+@import "00_zmienne";
+
+@import "01_mixins";
+
+#gallery {
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(255,255,255,0.95);
+    
+    z-index: 10;
+    
+    display: none;
+    #gallery_main {
+        position: absolute;
+        
+        width: 75vw;
+        height: 75vh;
+        
+        @include element_center;
+        @include element_center_vertical;
+        
+        border: 3px solid black;
+        border-radius: 10px;
+        
+        z-index: 11;
+        
+        @include background_image (url("../img/tomato.jpg"),
+            center,
+            cover);
+        
+        .gallery_main_mask {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            
+            .gallery_icons_wrapper {
+                position: absolute;
+                @include element_center_vertical;
+                font-size: 25px;
+                margin: 10px;
+                color: #fff;
+                z-index: 12;                
+                
+                i:hover {color: red;}
+            }
+            
+            #img_previous {left: 0;}
+            
+            #img_next {right: 0;}
+            
+            #exit_gallery {
+                position: absolute;
+                font-size: 25px;
+                right: 0;
+                top: 0;
+                transform: translate(100%, -100%);
+                
+                i:hover {
+                    font-size: 35px;
+                    transition: all 0.2s ease-in-out; 
+                }
+            }
+        }
+    }
+    
+    #gallery_text_wrapper {
+        position: absolute;
+        
+        width: 75vw;
+        height: 12.5vh;
+        
+        @include element_center;
+        top: 100%;
+        transform: translateY(-100%);
+        
+        border: 3px solid black;
+        border-radius: 10px;
+        
+        z-index: 11;
+        
+        padding: 5px;
+        text-align: left;
+    }
+}    

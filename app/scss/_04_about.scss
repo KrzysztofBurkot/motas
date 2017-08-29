@@ -3,7 +3,7 @@
 @import "01_mixins";
 
 #about {
-      
+    padding-top: $section_padding_bottom; 
     padding-bottom: $section_padding_bottom;
     
     .team_fotos_wrapper_outer {
