@@ -32,39 +32,4 @@
             font-size: 16px;
         }
     }
-    
-    .footer_center { 
-        text-align: center;
-        
-        i {color: $sm_icons_color;}
-
-        .social_media_icons_container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            margin: 0px;
-        }
-
-        .social_media_icons_wrapper {
-            height: 35px;
-            width: 35px;
-            background-color: $sm_icons_wrapper_color;
-            border-radius: 25%;
-            margin: 8px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .social_media_icons {
-            margin: auto;
-            font-size: 20px;
-        }
-
-        .social_media_icons_wrapper:hover {
-            background-color: $sm_icons_wrapper_hover;
-            border-radius: 50%;
-            transition: all 0.2s ease-in-out;
-        }
-    }
 }

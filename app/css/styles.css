@@ -322,31 +322,6 @@ h2, h3 {
       padding-top: 17px;
       padding-bottom: 17px;
       font-size: 16px; }
-  #footer .footer_center {
-    text-align: center; }
-    #footer .footer_center i {
-      color: #fff; }
-    #footer .footer_center .social_media_icons_container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      margin: 0px; }
-    #footer .footer_center .social_media_icons_wrapper {
-      height: 35px;
-      width: 35px;
-      background-color: #333;
-      border-radius: 25%;
-      margin: 8px;
-      display: flex;
-      flex-direction: column; }
-    #footer .footer_center .social_media_icons {
-      margin: auto;
-      font-size: 20px; }
-    #footer .footer_center .social_media_icons_wrapper:hover {
-      background-color: #5bc0de;
-      border-radius: 50%;
-      transition: all 0.2s ease-in-out; }
 
 /*FONT SIZES*/
 /*MENU VARIABLES*/
