@@ -69,7 +69,7 @@ h2, h3 {
     padding: 10px;
     margin: 35px 15px 35px 0px; }
   #menu .navbar-collapse {
-    max-height: 600px !important; }
+    max-height: 500px !important; }
     #menu .navbar-collapse .nav a {
       font-size: 20px;
       padding-top: 40px;
@@ -113,44 +113,17 @@ h2, h3 {
 /*FORM*/
 #about {
   padding-bottom: 10vh; }
-  #about .about_items {
-    text-align: center;
-    padding: 10px; }
-  #about .about_items_icons_wrapper {
-    height: 150px;
-    width: 150px;
-    border-radius: 25%;
-    color: #fff;
-    background-color: #5bc0de;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding: 25px 0;
-    font-size: 70px !important; }
-
-/*FONT SIZES*/
-/*MENU VARIABLES*/
-/*SECTION SIZES*/
-/*SOCIAL MEDIA*/
-/*FORM*/
-/*FONT SIZES*/
-/*MENU VARIABLES*/
-/*SECTION SIZES*/
-/*SOCIAL MEDIA*/
-/*FORM*/
-#team {
-  padding-bottom: 10vh; }
-  #team .team_fotos_wrapper_outer {
+  #about .team_fotos_wrapper_outer {
     text-align: center; }
-    #team .team_fotos_wrapper_outer i {
+    #about .team_fotos_wrapper_outer i {
       color: #fff; }
-    #team .team_fotos_wrapper_outer .social_media_icons_container {
+    #about .team_fotos_wrapper_outer .social_media_icons_container {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
       margin: 0px; }
-    #team .team_fotos_wrapper_outer .social_media_icons_wrapper {
+    #about .team_fotos_wrapper_outer .social_media_icons_wrapper {
       height: 35px;
       width: 35px;
       background-color: #333;
@@ -158,26 +131,26 @@ h2, h3 {
       margin: 8px;
       display: flex;
       flex-direction: column; }
-    #team .team_fotos_wrapper_outer .social_media_icons {
+    #about .team_fotos_wrapper_outer .social_media_icons {
       margin: auto;
       font-size: 20px; }
-    #team .team_fotos_wrapper_outer .social_media_icons_wrapper:hover {
+    #about .team_fotos_wrapper_outer .social_media_icons_wrapper:hover {
       background-color: #5bc0de;
       border-radius: 50%;
       transition: all 0.2s ease-in-out; }
-  #team .team_foto_wrapper {
+  #about .team_foto_wrapper {
     left: 0;
     right: 0;
     margin: 0 auto;
     height: 150px;
     width: 150px;
     border-radius: 25%; }
-  #team #team_foto_1 {
+  #about #team_foto_1 {
     background-image: url("../img/piotrek.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
-  #team #team_foto_2 {
+  #about #team_foto_2 {
     background-image: url("../img/pawel.jpg");
     background-position: center;
     background-size: cover;
